@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiz 8 Hub</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+    </style>
+    <link rel="icon" type="image/png" href="img/Swiz 8 icon.png" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script type="text/javascript">
+        window.Trengo = window.Trengo || {};
+        window.Trengo.key = 'ilggG3TP7s7vtn2HGejZ';
+        (function(d, script, t) {
+            script = d.createElement('script');
+            script.type = 'text/javascript';
+            script.async = true;
+            script.src = 'https://static.widget.trengo.eu/embed.js';
+            d.getElementsByTagName('head')[0].appendChild(script);
+        }(document));
+        </script>
+</head>
+<body id="body">
+    <nav>
+        <ul class="menu" id="text">
+            <li class="logo"></li>
+            <li class="logo"><img src="img/swiz8logoT.png" alt="Swiz 8 Logo" width="54px"></li>
+            <li class="item"><a href="#" id="text">Home</a></li>
+            <li class="item"><a href="#" id="text">Chat</a></li>
+            <li class="item"><a href="#" id="text">Suggestions</a></li>
+            <li class="item button"><a href="#" id="text">Login</a></li>
+            <li class="item button secondary"><a href="#" id="text">Signup</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <main>
+        <a href="#" style="position:fixed;bottom:0;">???</a>
+    </main>
+    <div class="customise-text-section">
+        <button onclick="showCustomTextOptions()" id="text">Customise Text!</button>
+        <form id="customise-text">
+            <label for="font-select" id="text">Change Font:</label>
+                <select id="font-select" onchange="updateTextStyle()">
+                    <option value="Arial" id="text">Arial</option>
+                    <option value="Cambria" id="text">Cambria</option>
+                    <option value="'Courier New'" id="text">Courier New</option>
+                    <option value="Georgia" id="text">Georgia</option>
+                    <option value="'Times New Romans'" id="text">Times New Romans</option>
+                    <option value="'Trebuchet MS'" id="text">Trebuchet MS</option>
+                    <option value="'Quicksand'" id ="text">Quicksand</option>
+                </select>
+            <label for="colour-select" id="text">Change Text Colour:</label>
+            <input type="color" id="colour-select" onchange="updateTextStyle()">
+        </form>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/customText.js"></script>
+</body>
+</html>
